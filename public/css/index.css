@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main-box{
+    background-image: url("../images/bedroom.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.Wakeup{
+    margin: 300px 0 0 300px;
+}
+.brush-box{
+    background-image: url("../images/brushhh.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.next{
+    margin-left: 1300px;
+    margin-top: 250px;
+}
+.off{
+    margin: 170px;
+}
+.open{
+    margin-left: 100px;
+}
+.life{
+    height: 40px;
+    width: 170px;
+    margin-left: 5px;
+    /* margin-top: 50px; */
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.life i {
+    font-size:xx-large;
+    color: red !important;
+}
+
