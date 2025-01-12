@@ -11,7 +11,9 @@ app.engine("ejs" , ejsmate);
 app.listen(8080 , ()=>{
     console.log("app listening to 8080");
 });
-
+app.get("/home" , (req , res)=>{
+    res.render("mains/home.ejs");
+});
 app.get("/main" , (req , res)=>{
     res.render("mains/index.ejs");
 });
