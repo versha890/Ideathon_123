@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Loop through the icons and find the first one with class "fa-heart"
         for (let icon of lifeIcons) {
-            if (icon.classList.contains('fa-heart')) {
+            if (icon.classList.contains('one')) {
                 icon.classList.remove('fa-heart'); // Remove heart icon
                 icon.classList.add('fa-heart-broken'); // Add broken heart icon
                 break; // Stop after changing one icon

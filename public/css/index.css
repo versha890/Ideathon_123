@@ -40,4 +40,52 @@
     font-size:xx-large;
     color: red !important;
 }
+.navbar{
+    height: 5rem;                                              /* navbar*/
+    background-color: white;
+}
+.fa-droplet{                                      /* logoo*/
+    color: #83B0DE;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+
+
+.shop{                                                           /*shop*/
+    display: flex;
+}
+.img1{
+    height: 300px;
+    width: 300px;
+    background-image: url("../images/image2.jpg");
+    background-size: cover;
+}
+.img2{
+    height: 300px;
+    width: 300px;
+    background-image: url("../images/one.jpg");
+    background-size: cover;
+}
+
+/*next*/
+.next{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(181, 216, 216);
+}
+.dustbin{
+    height: 500px;
+    width: 500px;
+    background-image: url("../images/garbage1.jpg");
+    background-size: cover;
+}
+
+.pond{
+    height: 500px;
+    width: 500px;
+    background-image: url("../images/garbage2.jpeg");
+    background-size: cover;
+}
 
