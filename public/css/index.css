@@ -275,6 +275,14 @@ body{
     box-shadow: 0.5px .5px 20px #e54761;
     
 }
+.shop_add_button{
+    background-color: #033f40;
+    color: white;
+    width: 60px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 30%;
+}
 
 /* Home2 */
 

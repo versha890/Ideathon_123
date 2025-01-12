@@ -7,6 +7,7 @@
             <div class="shop_bottom">
                 <div class="shop_text">Water tank overflow alarm <span>4.3 &#9733</span></div>
                 <div class="shop_time"> ₹739</div>
+                <button class="shop_add_button">Add</button>
             </div>
         </div>
         <div class="shop_card">
@@ -14,6 +15,7 @@
             <div class="shop_bottom">
                 <div class="shop_text">Water saver shower head <span>4.0 &#9733</span></div>
                 <div class="shop_time">₹3,922</div>
+                <button class="shop_add_button">Add</button>
             </div>
         </div>
         <div class="shop_card">
@@ -21,6 +23,7 @@
             <div class="shop_bottom">
                 <div class="shop_text">Water saving sprinkler<span>3.3 &#9733</span></div>
                 <div class="shop_time"> ₹209</div>
+                <button class="shop_add_button">Add</button>
             </div>
         </div>
         <div class="shop_card">
@@ -28,6 +31,7 @@
             <div class="shop_bottom">
                 <div class="shop_text">Displacement Device <span>4.3 &#9733</span></div>
                 <div class="shop_time">₹302</div>
+                <button class="shop_add_button">Add</button>
             </div>
         </div>
         <div class="shop_card">
@@ -35,6 +39,7 @@
             <div class="shop_bottom">
                 <div class="shop_text">Plant water saving gel <span>4.3 &#9733</span></div>
                 <div class="shop_time">₹105</div>
+                <button class="shop_add_button">Add</button>
             </div>
         </div>
         <div class="shop_card">
@@ -42,6 +47,7 @@
             <div class="shop_bottom">
                 <div class="shop_text">Waterless Carwash kit<span>4.9 &#9733</span></div>
                 <div class="shop_time">₹871</div>
+                <button class="shop_add_button">Add</button>
             </div>
         </div>
         <div class="shop_card">
@@ -49,7 +55,18 @@
             <div class="shop_bottom">
                 <div class="shop_text">Drip irrigation kits for plants<span>5.0 &#9733</span></div>      
                 <div class="shop_time">₹1,355</div>
+                <button class="shop_add_button">Add</button>
             </div>
         </div>
     </div>
 </div>
+<script>
+    const buttons = document.querySelectorAll('.shop_add_button');
+    buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                const productName = button.closest('.shop_card').querySelector('.shop_text').childNodes[0].textContent.trim();
+                console.log(productName); 
+                alert(` ${productName} added to cart`);
+            });
+        });
+</script>
