@@ -1,0 +1,23 @@
+<% layout("/layout/boilerplate")%>
+<body class="home2">
+    <div class="container2">
+        <h1>Save Water, Save Life</h1>
+        <h2>A game to spread awareness about water conservation</h2>
+        <button class="btnn btn-start" onclick="startGame()">Start Game</button>
+        <button class="btnn btn-info" onclick="showInfo()">Learn More</button>
+    </div>
+    <div class="wave"></div>
+
+    <script>
+        // Start the game
+        function startGame() {
+            alert("Let's begin the water conservation challenge!");
+            window.location.href = "/main"; // Replace with your game URL
+        }
+
+        // Show information about water conservation
+        function showInfo() {
+            alert("Did you know? Conserving water today ensures a better tomorrow. Every drop counts!");
+        }
+    </script>
+</body>

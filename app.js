@@ -17,6 +17,9 @@ app.get("/main/shop" , (req , res)=>{
 app.get("/main/home" , (req , res)=>{
     res.render("mains/home.ejs");
 });
+app.get("/main/home2" , (req , res)=>{
+    res.render("mains/home2.ejs");
+});
 app.get("/main" , (req , res)=>{
     res.render("mains/index.ejs");
 });

@@ -1,28 +1,40 @@
-/* *{
+*{
     padding: 0;
     margin: 0;
+}
+body{
+    font-family: "Plus Jakarta Sans", serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* .container{
+    margin: 0 auto;
+    width: 100%;
 } */
- .container{
-    margin-left: -10px;
-    padding: 0;
- }
 .main-box{
     background-image: url("../images/bedroom.jpg");
     height: 100vh;
-    width: 100vw;
+    width: 1520px;
+    margin-left: -115px !important;
     background-size: cover;
 }
 .Wakeup{
     margin: 300px 0 0 300px;
 }
+
+/* brush */
 .brush-box{
     background-image: url("../images/brushhh.jpg");
-    height: 100vh;
+    height: 89vh;
+    width: 1520px;
+    margin-left: -115px !important;
     background-size: cover;
 }
-.next{
+.nextbtn{
     margin-left: 1300px;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 .off{
     margin: 170px;
@@ -45,17 +57,14 @@
     font-size:xx-large;
     color: red !important;
 }
-.navbar{
-    height: 5rem;                                              /* navbar*/
-    background-color: white;
-}
+
 .fa-droplet{                                      /* logoo*/
     color: #83B0DE;
     font-size: 2rem;
 }
-.nav-link{
+/* .nav-link{
     color: #222222 !important;
-}
+} */
 
 
 .shop{                                                           /*shop*/
@@ -75,7 +84,7 @@
 }
 
 /*next*/
-.next2{
+/* .next2{
     height: 650px;
     width: 1300px;
     margin-left: 0;
@@ -89,8 +98,6 @@
     margin-left: 5px;
     background-image: url("../images/garbage1.jpg") !important;
     background-size: cover !important;
-    /* margin-left: 0; */
-    /* margin-right: 400px !important; */
 }
 
 .pond{
@@ -100,16 +107,28 @@
     margin-left: 90px;
     background-image: url("../images/garbage2.jpeg") !important;
     background-size: cover !important;
-}
+} */
+.abc{
+    display: flex;
+    justify-content: space-around;
+};
+/* .nextpage{
+    background-color: #4a9adc;
+} */
+
+
+
+
 /* navbar .css */
 
 .navbar {
-    margin-left: 72px;
+    margin-left: 0px;
+    margin-right: 0px;
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #033f40;
+    background-color: #5e99cc;
     color: rgb(42, 183, 70);
     height: 10vh;
 }
@@ -118,8 +137,10 @@
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50%;
 }
 
 .nav-links {
@@ -135,7 +156,7 @@
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 0.5rem;
     transition: background-color 0.3s;
 }
@@ -250,3 +271,88 @@
     box-shadow: .5px .5px 15px rgb(215, 213, 213);
     
 }
+
+/* Home2 */
+
+        /* Main Container */
+        .home2{
+            /* margin: 0;
+            padding: 0; */
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #4facfe, #00f2fe);
+            color: white;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            text-align: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container2 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Header */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons */
+        .btnn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn-start {
+            background: #00b894 !important;
+            color: white;
+            margin-top: 15px;
+        }
+
+        .btn-start:hover {
+            background: #019874;
+            transform: scale(1.1);
+        }
+
+        .btn-info {
+            background: #0984e3;
+            color: white;
+            margin-top: 15px;
+        }
+
+        .btn-info:hover {
+            background: #065abf;
+            transform: scale(1.1);
+        }
+
+        /* Animation */
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url('..//images/wave2.jpg') repeat-x;
+            animation: wave 5s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes wave {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
