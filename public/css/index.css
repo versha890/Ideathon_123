@@ -1,10 +1,15 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
-}
+} */
+ .container{
+    margin-left: -10px;
+    padding: 0;
+ }
 .main-box{
     background-image: url("../images/bedroom.jpg");
     height: 100vh;
+    width: 100vw;
     background-size: cover;
 }
 .Wakeup{
@@ -96,4 +101,152 @@
     background-image: url("../images/garbage2.jpeg") !important;
     background-size: cover !important;
 }
+/* navbar .css */
 
+.navbar {
+    margin-left: 72px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #033f40;
+    color: rgb(42, 183, 70);
+    height: 10vh;
+}
+.navbar img{
+    width: 100px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    font-size: 20px;
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: white;
+    color: #033f40;
+    border-radius: 4px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+/* shop css */
+/* shop tab  */
+.shop_container{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
+    column-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shop_card{
+    border-radius: 20px;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+}
+.shop_card img{
+    border-radius: 15px;
+    width: 100%;
+}
+.shop_top{
+    position: relative;
+}
+.shop_top span{
+    padding: 0px 5px;
+    background-color: rgb(37, 111, 239);
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+.shop_text{
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: relative;
+}
+.shop_bottom{
+    padding: 10px;
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+.shop_bottom span{
+    position: absolute;
+    background-color: #267e3e;
+    border-radius: 10px;
+    font-size: .9rem;
+    right: 0;
+    padding: 0px 5px;
+    color: white;
+}
+.shop_time{
+    text-align: left;
+}
+.shop_items{
+    font-size: 14px;
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight:lighter;
+    color: rgb(71, 68, 68);
+}
+.shop_card:hover{
+    box-shadow: .5px .5px 15px rgb(215, 213, 213);
+    
+}
