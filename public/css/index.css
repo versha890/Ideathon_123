@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 body{
     font-family: "Plus Jakarta Sans", serif !important;
@@ -17,7 +18,6 @@ body{
     background-image: url("../images/bedroom.jpg");
     height: 100vh;
     width: 1520px;
-    margin-left: -115px !important;
     background-size: cover;
 }
 .Wakeup{
@@ -29,7 +29,7 @@ body{
     background-image: url("../images/brushhh.jpg");
     height: 89vh;
     width: 1520px;
-    margin-left: -115px !important;
+    /* margin-left: -115px !important; */
     background-size: cover;
 }
 .nextbtn{
@@ -121,16 +121,16 @@ body{
 
 /* navbar .css */
 
-.navbar {
+#navbar {
+    background-color: #033f40;
     margin-left: 0px;
     margin-right: 0px;
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #5e99cc;
-    color: rgb(42, 183, 70);
     height: 10vh;
+    border:2px solid black 
 }
 .navbar img{
     width: 100px;
@@ -147,11 +147,13 @@ body{
     list-style: none;
     display: flex;
     gap: 2rem;
+    color:#033f40;
 }
 
 .nav-links li {
     font-size: 20px;
     display: inline;
+    color: white;
 }
 
 .nav-links a {
@@ -159,6 +161,7 @@ body{
     color: black;
     padding: 0.5rem;
     transition: background-color 0.3s;
+    color: white;
 }
 
 .nav-links a:hover {
@@ -210,7 +213,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 25px;
-    column-gap: 10px;
+    column-gap: 25px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -220,6 +223,7 @@ body{
     width: 350px;
     height: 350px;
     padding: 10px;
+    background-color: white;
 }
 .shop_card img{
     border-radius: 15px;
@@ -268,7 +272,7 @@ body{
     color: rgb(71, 68, 68);
 }
 .shop_card:hover{
-    box-shadow: .5px .5px 15px rgb(215, 213, 213);
+    box-shadow: 0.5px .5px 20px #e54761;
     
 }
 
