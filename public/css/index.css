@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=El+Messiri:wght@400..700&family=League+Spartan:wght@100..900&family=Playwrite+VN:wght@100..400&family=Potta+One&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -122,7 +126,6 @@ body{
 /* navbar .css */
 
 #navbar {
-    background-color: #033f40;
     margin-left: 0px;
     margin-right: 0px;
     width: 100vw;
@@ -130,17 +133,9 @@ body{
     justify-content: space-evenly;
     align-items: center;
     height: 10vh;
-    border:2px solid black 
 }
 .navbar img{
     width: 100px;
-}
-
-.logo {
-    font-size: 1rem;
-    font-weight: bold;
-    border: 1px solid black;
-    border-radius: 50%;
 }
 
 .nav-links {
@@ -205,6 +200,14 @@ body{
         display: flex;
     }
 }
+.logo{
+    padding-left: 20px;
+    transition: 0.2s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.2);
+    
+}
 /* shop css */
 /* shop tab  */
 .shop_container{
@@ -213,17 +216,18 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 25px;
-    column-gap: 25px;
+    column-gap: 60px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .shop_card{
+    color: white;
     border-radius: 20px;
     width: 350px;
     height: 350px;
     padding: 10px;
-    background-color: white;
+    background-color: #033f40;
 }
 .shop_card img{
     border-radius: 15px;
@@ -249,6 +253,7 @@ body{
     padding: 10px;
     line-height: 30px;
     font-size: 1.1rem;
+    
 }
 .shop_bottom span{
     position: absolute;
@@ -272,16 +277,25 @@ body{
     color: rgb(71, 68, 68);
 }
 .shop_card:hover{
-    box-shadow: 0.5px .5px 20px #e54761;
+    box-shadow: 0.5px .5px 20px #033f40;
     
 }
 .shop_add_button{
-    background-color: #033f40;
+    background-color: #267e3e;
     color: white;
     width: 60px;
     height: 50px;
     margin-top: 10px;
     border-radius: 30%;
+}
+.shop{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    padding: 40px;
+    font-family: "Anton", serif;
+    
 }
 
 /* Home2 */
