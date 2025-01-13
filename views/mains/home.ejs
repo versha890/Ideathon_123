@@ -1,17 +1,16 @@
 <% layout("/layout/boilerplate")%>
-    <iframe  height="100%" src="https://www.youtube.com/embed/MFLVmAE4cqg?autoplay=1&loop=1&playlist=MFLVmAE4cqg&mute=1&modestbranding=1&controls=0&showinfo=0&iv_load_policy=3&rel=0" frameborder="0" allowfullscreen></iframe>
-    <div class="info">1. Yamuna Action Plan: Aimed at reducing river pollution through sewage treatment and public awareness.</div>
-    <div class="info">2. Delhi Jal Board (DJB) Initiatives:o Programs for water harvesting, wastewater treatment, and groundwater recharge.</div>
-<div class="info">3. Rainwater Harvesting Mandate:o Mandatory rainwater harvesting systems in large buildings and complexes.</div>
-4. National Mission for Clean Ganga (NMCG):
-o Though focused on the Ganga, NMCG has indirect benefits for the Yamuna.
-5. Sewage Management and Treatment:
-o Sewage Treatment Plants (STPs)
-o Sewerage network expansion
-6. Jal Jeevan Mission: Har Ghar Jal Initiative: Aims to provide piped water to all
-households, though urban areas like Delhi lag in implementation.
-7. Atal Bhujal Yojana: Focuses on community-led groundwater management,
-involving local stakeholders in sustainable water extraction practices.
+<video autoplay loop muted>
+    <source src="/images/theme2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="info">1. Yamuna Action Plan: Aimed at reducing river pollution through sewage treatment and public awareness.</div>
+<div class="info">2. Delhi Jal Board (DJB) Initiatives: Programs for water harvesting, wastewater treatment, and groundwater recharge.</div>
+<div class="info">3. Rainwater Harvesting Mandate: Mandatory rainwater harvesting systems in large buildings and complexes.</div>
+<div class="info">4. National Mission for Clean Ganga (NMCG): Though focused on the Ganga, NMCG has indirect benefits for the Yamuna.</div>
+<div class="info">5. Sewage Management and Treatment: Sewage Treatment Plants (STPs) and sewerage network expansion.</div>
+<div class="info">6. Jal Jeevan Mission: Har Ghar Jal Initiative: Aims to provide piped water to all households, though urban areas like Delhi lag in implementation.</div>
+<div class="info">7. Atal Bhujal Yojana: Focuses on community-led groundwater management, involving local stakeholders in sustainable water extraction practices.</div>
+
     </div>
 </body>
 <style>
@@ -19,8 +18,14 @@ involving local stakeholders in sustainable water extraction practices.
         margin: 0;
         padding: 0;
     }
-    iframe{
+    video{
         width: 100vw;
         height: 90vh;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
