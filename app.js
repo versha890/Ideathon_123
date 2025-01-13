@@ -29,10 +29,14 @@ app.get("/main/shop" , (req, res)=>{
 });
 
 
-app.get("/main/brush" , (req , res)=>{
-    res.render("mains/brush.ejs");
+app.get("/main/level1" , (req , res)=>{
+    res.render("mains/level1.ejs");
 });
 
-app.get("/main/next" , (req,res)=>{
-    res.render("mains/next.ejs");
+app.get("/main/level2" , (req,res)=>{
+    res.render("mains/level2.ejs");
+})
+
+app.get("/main/level3" ,(req , res)=>{
+    res.render("mains/level3.ejs");
 })

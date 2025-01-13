@@ -88,37 +88,39 @@ body{
 }
 
 /*next*/
-/* .next2{
-    height: 650px;
-    width: 1300px;
-    margin-left: 0;
-    display: flex !important;
-    background-color: rgb(197, 237, 237) !important;
-}
-.dustbin{
-    height: 500px  !important;
-    width: 600px !important;
-    border: 2px solid black;
-    margin-left: 5px;
-    background-image: url("../images/garbage1.jpg") !important;
-    background-size: cover !important;
-}
-
-.pond{
-    height: 500px !important;
-    width: 600px !important;
-    border: 2px solid black;
-    margin-left: 90px;
-    background-image: url("../images/garbage2.jpeg") !important;
-    background-size: cover !important;
-} */
 .abc{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
+    margin-left: 20px;
 };
-/* .nextpage{
-    background-color: #4a9adc;
-} */
+
+.card1{
+    border-radius: 50px;
+}
+.card2{
+    border-radius: 50px;
+}
+
+.card1 :hover{
+    box-shadow: 10px 10px 50px rgb(39, 36, 36);
+    transform: scale(1.05,1.05);
+}
+.card2 :hover{
+    box-shadow: 10px 10px 50px gray;
+    transform: scale(1.05,1.05);
+
+}
+.full{
+    background-image: url("../images/back222.avif");
+    background-size: cover;
+    height: 100vh;
+    width: 1520px;
+}
+.nextbtn2{
+    margin-left: 1350px;
+    margin-top: -15px;
+}
+
 
 
 
@@ -201,13 +203,14 @@ body{
     }
 }
 .logo{
-    padding-left: 20px;
+    padding-left: 0px;
+    padding-right: 880px;
     transition: 0.2s ease-in-out;
 }
 .logo:hover{
-    transform: scale(1.2);
-    
+    transform: scale(1.05);
 }
+
 /* shop css */
 /* shop tab  */
 .shop_container{
@@ -300,33 +303,35 @@ h2{
 
 /* Home2 */
 
-        /* Main Container */
         .home2{
             /* margin: 0;
             padding: 0; */
             font-family: Arial, sans-serif;
             background: linear-gradient(to bottom, #4facfe, #00f2fe);
-            color: white;
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */
-            text-align: center;
+            background-image: url("../images/water\ back.jpg");
+            background-size: cover;
+            color: black;
+            display: flex;
+            /* justify-content: center;
+            align-items: center;
+            text-align: center; */
             height: 100vh;
-            overflow: hidden;
+            /* overflow: hidden; */
         }
         .container2 {
             text-align: center;
             padding: 20px;
+            margin-left: 700px;
         }
 
         /* Header */
         h1 {
-            font-size: 3rem;
+            font-size: 5rem;
             margin-bottom: 20px;
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 4rem;
             margin-bottom: 30px;
         }
 
@@ -382,3 +387,41 @@ h2{
                 transform: translateX(-100%);
             }
         }
+
+/* blast */
+#blastButton {
+    /* padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF; */
+    /* border: none;
+    border-radius: 5px; */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#blastButton:hover {
+    background-color: #0056b3;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: random;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(500px) rotate(360deg);
+        opacity: 0;
+    }
+}

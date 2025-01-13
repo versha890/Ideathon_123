@@ -1,0 +1,60 @@
+<% layout("/layout/boilerplate")%>
+<div class="full">
+<div class="life">
+    <i class="fa-solid fa-heart one"></i>
+    <i class="fa-solid fa-heart two"></i>
+    <i class="fa-solid fa-heart three"></i>
+</div>
+<div class="abc">
+    <div class="card card1" style="width: 28rem;" >
+        <img src="https://media.istockphoto.com/vectors/child-throws-a-garbage-in-the-river-vector-id918106158?k=6&m=918106158&s=612x612&w=0&h=z5UgLr7faqWqJpZ-zW5P8zsXJ5ebdXMrONc9R1pxFMo=" class="card-img-top" alt="pond">
+        <div class="card-body">
+            <p class="card-text">Keep the <b>ponds</b> clean and <b>bright</b>, For fish to swim and birds take flight</p>
+            <a href="#" class="btn river btn-primary">Throwing garbage in <b>River</b></a>
+        </div>
+    </div>
+    <div class="card card2" style="width: 28rem;">
+        <img src="https://static.vecteezy.com/system/resources/previews/020/240/681/large_2x/kid-throwing-garbage-in-trash-bin-illustration-vector.jpg" class="card-img-top"  alt = "dustbin">
+        <br><br>
+        <div class="card-body">
+            <p class="card-text">Throw the garbage on the <b>bin</b>, That's how we let nature win!</p>
+            <a href="#" class="btn btn-primary " id="blastButton">Throwing garbage in <b>Dustbin</b></a>
+        </div>
+    </div>
+</div>
+<form method="GET" action="/main/level3">
+    <button class="nextbtn2 btn btn-primary btn-lg">NEXT LEVEL</button>
+</form>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    // Add event listener to the "OFF" button
+    const offButton = document.querySelector('.river');
+    offButton.addEventListener('click', function () {
+        // Select all <i> elements inside the .life div
+        const lifeIcons = document.querySelectorAll('.life i');
+
+        // Loop through the icons and find the first one with class "fa-heart"
+        for (let icon of lifeIcons) {
+            if (icon.classList.contains('two')) {
+                icon.classList.remove('fa-heart'); // Remove heart icon
+                icon.classList.add('fa-heart-broken'); // Add broken heart icon
+                break; // Stop after changing one icon
+            }
+        }
+
+        // Disable the button after one click
+        offButton.disabled = true;
+    });
+});
+
+const blastbuton = document.querySelector('#blastButton');
+blastbuton.addEventListener("click" , ()=>{
+    alert("God job! Click on the next level to proceed further");
+})
+
+</script>
+
+
+
+
