@@ -1,2 +1,93 @@
 <% layout("/layout/boilerplate")%>
-<h1>level 3</h1>
+
+<div class="level3" style="width: 1550px;">
+    <div class="life">
+        <i class="fa-solid fa-heart one"></i>
+        <i class="fa-solid fa-heart two"></i>
+        <i class="fa-solid fa-heart three"></i>
+    </div>
+    <div>
+        <div>
+            <div class="carbuc">"Wash your car with a bucket, it’s the smart way to go,
+                Saving water helps the Earth and lets life grow!" 🌱🚗
+            </div>
+            <div class="carbuc2">
+                How do you wash your car
+            </div>
+            <button type="button" class="btn buc-btn btn-primary btn-lg" id="blastButton">By Bucket</button>
+            <div class="carbucket"></div>
+        </div>
+    
+        <div class="car">
+            <div class="carpipeline">"Using a bucket to wash saves water for all,
+                A running pipe lets precious drops fall." 🌍🚗
+            </div>
+            <div class="carpipeline2">
+                How do you wash your car
+            </div>
+            <button type="button" class="btn pipe-btn btn-danger btn-lg">By Pipe</button>
+            <div class="carpipe"></div>
+        </div>
+    </div>
+    <form method="GET"  action="/main/end">
+        <button class="btn end btn-primary btn-lg ">END</button>
+    </form>
+</div>
+
+
+
+
+
+<!-- 
+<div class="life">
+    <i class="fa-solid fa-heart one"></i>
+    <i class="fa-solid fa-heart two"></i>
+    <i class="fa-solid fa-heart three"></i>
+</div>
+<div>
+    <div>
+        <div class="carbuc">"Wash your car with a bucket, it’s the smart way to go,
+            Saving water helps the Earth and lets life grow!" 🌱🚗
+        </div>
+        <div class="carbuc2">
+            How do you wash your car
+        </div>
+        <button type="button" class="btn buc-btn btn-outline-success btn-lg" id="blastButton">By Bucket</button>
+        <div class="carbucket"></div>
+    </div>
+
+    <div class="car">
+        <div class="carpipeline">"Using a bucket to wash saves water for all,
+            A running pipe lets precious drops fall." 🌍🚗
+        </div>
+        <div class="carpipeline2">
+            How do you wash your car
+        </div>
+        <button type="button" class="btn pipe-btn btn-outline-danger btn-lg">By Pipe</button>
+        <div class="carpipe"></div>
+    </div>
+</div> -->
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+    // Add event listener to the "OFF" button
+    const offButton = document.querySelector('.pipe-btn');
+    offButton.addEventListener('click', function () {
+        // Select all <i> elements inside the .life div
+        const lifeIcons = document.querySelectorAll('.life i');
+
+        // Loop through the icons and find the first one with class "fa-heart"
+        for (let icon of lifeIcons) {
+            if (icon.classList.contains('three')) {
+                icon.classList.remove('fa-heart'); // Remove heart icon
+                icon.classList.add('fa-heart-broken'); // Add broken heart icon
+                break; // Stop after changing one icon
+            }
+        }
+
+        // Disable the button after one click
+        offButton.disabled = true;
+    });
+});
+</script>

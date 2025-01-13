@@ -28,7 +28,7 @@ body{
     margin: 300px 0 0 300px;
 }
 
-/* brush */
+/* level1 */
 .brush-box{
     background-image: url("../images/brushhh.jpg");
     height: 89vh;
@@ -66,10 +66,6 @@ body{
     color: #83B0DE;
     font-size: 2rem;
 }
-/* .nav-link{
-    color: #222222 !important;
-} */
-
 
 .shop{                                                           /*shop*/
     display: flex;
@@ -87,7 +83,7 @@ body{
     background-size: cover;
 }
 
-/*next*/
+/*level2*/
 .abc{
     display: flex;
     justify-content:space-evenly;
@@ -118,7 +114,7 @@ body{
 }
 .nextbtn2{
     margin-left: 1350px;
-    margin-top: -15px;
+    margin-top: -45px;
 }
 
 
@@ -301,7 +297,7 @@ h2{
     
 }
 
-/* Home2 */
+/* game starting */
 
         .home2{
             /* margin: 0;
@@ -388,7 +384,8 @@ h2{
             }
         }
 
-/* blast */
+/* blast button*/
+
 #blastButton {
     /* padding: 15px 30px;
     font-size: 18px;
@@ -424,4 +421,160 @@ h2{
         transform: translateY(500px) rotate(360deg);
         opacity: 0;
     }
+}
+
+/* footer */
+
+.f-info{                                         /*footer */                    
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: rgb(211, 207, 207);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.f-info-links{                                             /*footer */
+    text-decoration: none !important;
+    color: #222222;
+}
+.f-info-socials i{                                          /*footer */
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info-links,                                               /*footer */
+.f-info-socials,
+.f-info-brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* level3 */
+
+.carpipe{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black !important;
+    border-radius: 30px;
+    background-image: url("../images/carpipe2.jpg");
+    background-size: cover;
+    width: 100vh;
+    margin-top: -440px;
+    margin-left: 10px;
+}
+
+.carpipe:hover{
+    box-shadow: 10px 10px 10px black;
+    transform: scale(1.02,1.02);
+}
+.carpipeline{
+    background-color: #4b7bb5;
+    color: black;
+    border: 2px solid #4b7bb5;
+    border-radius: 30px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    height: 145px;
+    width: 600px;
+    margin-left: 800px;
+    margin-top: 90px;
+}
+.carpipeline:hover{
+    box-shadow: 10px 10px 10px #132132;
+    transform: scale(1.02,1.02);
+}
+
+.carpipeline2{
+    background-color: #4b7bb5;
+    color: black;
+    border: 2px solid #4b7bb5;
+    border-radius: 30px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    height: 50px;
+    width: 400px;
+    margin-left: 800px;
+    margin-top: 50px;
+}
+.carpipeline2:hover{
+    box-shadow: 10px 10px 10px #132132;
+    transform: scale(1.02,1.02);
+}
+
+.pipe-btn{
+    margin-left: 1200px;
+    margin-top: 70px;
+
+}
+
+
+.carbucket{
+    background-image: url("../images/carbucket.jpg");
+    height: 500px;
+    width: 500px;
+    border: 2px solid black !important;
+    border-radius: 30px;
+    background-size: cover;
+    width: 100vh;
+    margin-top: -490px;
+    margin-left: 755px;
+}
+.carbucket:hover{
+    box-shadow: 10px 10px 10px #132132;
+    transform: scale(1.02,1.02);
+}
+.carbuc{
+        background-color: #4b7bb5;
+        color: black;
+        border: 2px solid #4b7bb5;
+        border-radius: 30px;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        height: 145px;
+        width: 600px;
+        margin-left: 40px;
+        margin-top: 70px;
+}
+.carbuc:hover{
+    box-shadow: 10px 10px 10px #132132;
+    transform: scale(1.02,1.02);
+}
+
+.carbuc2{
+    background-color: #4b7bb5;
+    color: black;
+    border: 2px solid #4b7bb5;
+    border-radius: 30px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    height: 50px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.carbuc2:hover{
+    box-shadow: 10px 10px 10px #132132;
+    transform: scale(1.02,1.02);
+}
+
+.buc-btn{
+    margin-top: 100px;
+    margin-left: 520px;
+    margin-bottom: 10px;
+}
+.level3{
+    background-color: rgba(51, 125, 215, 0.4);
+}
+
+.end{
+    margin-left: 1420px;
 }
