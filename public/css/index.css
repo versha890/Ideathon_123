@@ -472,9 +472,9 @@ h2{
     transform: scale(1.02,1.02);
 }
 .carpipeline{
-    background-color: #4b7bb5;
+    background-color: #9360a9;
     color: black;
-    border: 2px solid #4b7bb5;
+    border: 2px solid #9360a9;
     border-radius: 30px;
     text-align: center;
     font-size: xx-large;
@@ -490,9 +490,9 @@ h2{
 }
 
 .carpipeline2{
-    background-color: #4b7bb5;
+    background-color: #9360a9;
     color: black;
-    border: 2px solid #4b7bb5;
+    border: 2px solid #9360a9;
     border-radius: 30px;
     text-align: center;
     font-size: x-large;
@@ -530,9 +530,9 @@ h2{
     transform: scale(1.02,1.02);
 }
 .carbuc{
-        background-color: #4b7bb5;
+        background-color: #9360a9;
         color: black;
-        border: 2px solid #4b7bb5;
+        border: 2px solid #9360a9;
         border-radius: 30px;
         text-align: center;
         font-size: xx-large;
@@ -548,9 +548,9 @@ h2{
 }
 
 .carbuc2{
-    background-color: #4b7bb5;
+    background-color: #9360a9;
     color: black;
-    border: 2px solid #4b7bb5;
+    border: 2px solid #a073af;
     border-radius: 30px;
     text-align: center;
     font-size: x-large;
@@ -572,9 +572,65 @@ h2{
     margin-bottom: 10px;
 }
 .level3{
-    background-color: rgba(51, 125, 215, 0.4);
+    /* background-color: rgba(150, 12, 184, 0.3); */
+    background-image: url("../images/BANNE.png");
 }
 
 .end{
     margin-left: 1420px;
+}
+
+
+/* learnmore */
+
+.alldiv{
+    height: 60px;
+    background-color: rgba(8, 163, 210,0.6);
+    margin-top: 15px;
+    margin-left: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+.alldiv:hover{
+    box-shadow: 12px 12px 12px black;
+    transform: scale(1.02,1.02);
+}
+.hading{
+    margin-left: 600px;
+    margin-top: 10px;
+    height: 60px;
+    background-color: #0ca8c4;
+    border-radius: 25px;
+    width: 300px;
+    text-align: center;
+    padding-top: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 600;
+}
+.hading:hover{
+    box-shadow: 12px 12px 12px black;
+    transform: scale(1.05,1.05);
+}
+
+.div1{
+    background-image: url("../images/simpleback.jpg");
+    background-size: cover;
+}
+
+.pol{
+    height: 100px;
+    background-color: rgba(8, 163, 210,0.6);
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.pol:hover{
+    box-shadow: 12px 12px 12px black;
+    transform: scale(1.02,1.02);
 }

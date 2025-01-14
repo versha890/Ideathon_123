@@ -43,4 +43,8 @@ app.get("/main/level3" ,(req , res)=>{
 
 app.get("/main/end" , (req,res)=>{
     res.render("mains/end.ejs");
-})
+});
+
+app.get("/main/learnmore", (req , res)=>{
+    res.render("mains/learnmore.ejs");
+});
