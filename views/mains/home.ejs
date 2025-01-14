@@ -1,15 +1,92 @@
 <% layout("/layout/boilerplate")%>
 <video autoplay loop muted>
-    <source src="/images/theme2.mp4" type="video/mp4">
+    <source src="/images/2.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
-<div class="info">1. Yamuna Action Plan: Aimed at reducing river pollution through sewage treatment and public awareness.</div>
+<div class="home_container">
+    <div class="flashcard-container">
+        <div class="flashcard">
+            <div class="flashcard-front">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5d7PMD42mtJjnRn_RGw6CBJ904sYlgxHxOQ&s" alt="Image">
+            </div>
+            <div class="flashcard-back">
+                <h3>Reduce shower time</h3>
+                <p>Take shorter showers to save 5–7 gallons of water per minute.</p>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-front">
+                <img src="https://previews.123rf.com/images/tarasdubov/tarasdubov2010/tarasdubov201000484/160157982-mechanical-part-kitchen-tube-home-communication-system-cartoon-flat-illustration-water-leak.jpg" alt="Image">
+            </div>
+            <div class="flashcard-back">
+                <h3>Fix leaks</h3>
+                <p>Check for leaks in your plumbing fixtures and irrigation systems regularly. </p>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-front">
+                <img src="https://media.istockphoto.com/id/1261157192/vector/boy-stands-next-to-the-sink-and-brushes-his-teeth-water-flows-from-the-tap-boy-holds-a-tube.jpg?s=612x612&w=0&k=20&c=PEF1P8vq8881Of9ADpxMyE-Xw7oQaZDKVQqpLkZ1ZEA=" alt="Image">
+            </div>
+            <div class="flashcard-back">
+                <h3>Turn off the faucet</h3>
+                <p>Turn off the faucet while brushing your teeth, shaving, or washing your hands. </p>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-front">
+                <img src="https://m.media-amazon.com/images/I/51rYM4tg-GL._AC_UF894,1000_QL80_.jpg" alt="Image">
+            </div>
+            <div class="flashcard-back">
+                <h3>Use water-saving devices</h3>
+                <p>Install water-saving showerheads, faucet aerators, and toilets.</p>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-front">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2352952233/display_1500/stock-vector-man-wash-car-concept-young-guy-in-uniform-with-bucket-and-sponge-near-blue-auto-worker-with-2352952233.jpg" alt="Image">
+            </div>
+            <div class="flashcard-back">
+                <h3>Use a bucket</h3>
+                <p>Use a bucket and sponge to wash your car instead of a hose</p>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-front">
+                <img src="https://thumbs.dreamstime.com/b/cartoon-watering-can-sprays-water-drops-red-garden-falling-irrigation-symbol-education-card-kids-learning-inventory-250079799.jpg" alt="Image">
+            </div>
+            <div class="flashcard-back">
+                <h3>Use a rosehead watering can</h3>
+                <p> Use a rosehead watering can instead of a hose or sprinkler to water your garden. </p>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-front">
+                <img src="https://static.vecteezy.com/system/resources/previews/051/297/821/non_2x/washing-machine-cartoon-icon-illustration-object-technology-icon-concept-isolated-premium-flat-cartoon-style-vector.jpg" alt="Image">
+            </div>
+            <div class="flashcard-back">
+                <h3>Run full loads</h3>
+                <p>Only run your dishwasher and washing machine when they are full.</p>
+            </div>
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-front">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzC1nd-jC6uSKD15ozEKbm0L1qXe0l6eUwVA&s" alt="Image">
+            </div>
+            <div class="flashcard-back">
+                <h3>Water plants early or late</h3>
+                <p>Water your plants in the evening or early morning to reduce evaporation.</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!-- <div class="info">1. Yamuna Action Plan: Aimed at reducing river pollution through sewage treatment and public awareness.</div>
 <div class="info">2. Delhi Jal Board (DJB) Initiatives: Programs for water harvesting, wastewater treatment, and groundwater recharge.</div>
 <div class="info">3. Rainwater Harvesting Mandate: Mandatory rainwater harvesting systems in large buildings and complexes.</div>
 <div class="info">4. National Mission for Clean Ganga (NMCG): Though focused on the Ganga, NMCG has indirect benefits for the Yamuna.</div>
 <div class="info">5. Sewage Management and Treatment: Sewage Treatment Plants (STPs) and sewerage network expansion.</div>
 <div class="info">6. Jal Jeevan Mission: Har Ghar Jal Initiative: Aims to provide piped water to all households, though urban areas like Delhi lag in implementation.</div>
-<div class="info">7. Atal Bhujal Yojana: Focuses on community-led groundwater management, involving local stakeholders in sustainable water extraction practices.</div>
+<div class="info">7. Atal Bhujal Yojana: Focuses on community-led groundwater management, involving local stakeholders in sustainable water extraction practices.</div> -->
 
     </div>
 </body>
@@ -28,4 +105,76 @@
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+/* Container for the flashcard */
+.flashcard-container {
+    display: flex;
+    padding: 20px 50px;
+    gap: 6vw;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #0a4a16;
+}
 
+.flashcard {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d; /* Enable 3D effect */
+    transition: transform 0.6s; /* Smooth transition for flip effect */
+}
+
+/* Flip on hover */
+.flashcard:hover {
+    transform: rotateY(180deg); /* Rotate the card to flip it */
+}
+
+/* Front of the card */
+.flashcard-front,
+.flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when flipped */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for the front (image) */
+.flashcard-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the card */
+    border-radius: 10px;
+}
+
+/* Style for the back (content) */
+.flashcard-back {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transform: rotateY(180deg); /* Flip the back side initially */
+}
+
+.flashcard-back h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.flashcard-back p {
+    font-size: 1rem;
+}
+.flashcard h3{
+    font-weight: 900;
+}
+
+</style>

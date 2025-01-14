@@ -13,28 +13,28 @@
         </div>
     </div>
 </nav> -->
-    <nav style="background-color:#045a5c;background-size:contain;"id="navbar" class="navbar sticky-top">
-        <div class="logo"><a href="#" class="logoimg"><img src="/images/logo.png" alt=""></a></div>
-        <ul class="nav-links">
-            <li><a href="/main/home">HOME</a></li>
-            <li><a href="/main/home2">GAMES</a></li>
-            <!-- <li><a href="/main">Games</a></li> -->
-            <li><a href="/main/shop">SHOPPING</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+<nav style="background-color:#033f40;background-size:contain;"id="navbar" class="navbar sticky-top">
+    <div class="logo"><a href="/main/home" class="logoimg"><img src="/images/logo.png" alt=""></a></div>
+    <ul class="nav-links">
+        <li><a href="/main/home">HOME</a></li>
+        <li><a href="/main/home2">GAMES</a></li>
+        <!-- <li><a href="/main">Games</a></li> -->
+        <li><a href="/main/shop">SHOPPING</a></li>
+        <li><a href="/main/contact">CONTACT</a></li>
+    </ul>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
 
