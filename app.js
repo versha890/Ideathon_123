@@ -58,7 +58,9 @@ app.get("/main/learnmore", (req , res)=>{
 app.get("/main/contact" , (req, res)=>{
     res.render("mains/contact.ejs")
 });
-
+app.get("/main/info" , (req,res)=>{
+    res.render("mains/info.ejs")
+})
 app.post("/submit", (req, res) => {
     const name = req.body.name; // Access the "name" field from the form
     const email = req.body.email; // Access the "email" field

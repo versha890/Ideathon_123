@@ -631,11 +631,11 @@ body {
 /* Contact Container */
 .contact-container {
     max-width: 600px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     padding: 20px;
     background: #033f40;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 5%;
     text-align: center;
 }
 
@@ -643,6 +643,14 @@ body {
     color: #fff;
     font-size: 2rem;
     margin-bottom: 10px;
+}
+.contact_container2{
+    padding-top: 125px;
+    padding-left: 45vw;
+    margin-top:0;
+    width: 100vw;
+    height: 90vh;
+    background-image: url("../images/save_water.jpg");
 }
 
 /* Form Styling */
@@ -695,3 +703,10 @@ body {
     background: #9B4AB5;
 }
 
+/* thnaku */
+.thanku_container{
+    height: 90vh;
+    width: 100vw;
+    background-size: cover;
+    background-image: url("../images/thanku.png");
+}
