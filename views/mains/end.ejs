@@ -1,2 +1,74 @@
 <% layout("/layout/boilerplate")%>
-<div class="thanku_container"></div>
+<!-- <div class="thanku_container"></div> -->
+<style>
+        body{
+            margin: 0 ;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at top, #ff7eb3, #ff758c, #ff5252);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .navbar{
+            opacity: 0;
+        }
+</style>
+<body>
+    
+    <div class="container3">
+        <h1 class="than">Thank You!</h1>
+        <p class="feed">We appreciate your support and feedback. You make a difference!</p>
+        <div class="button-container">
+            <button onclick="goHome()" class="Return">Return to Homepage</button>
+            <button onclick="performAction()" class="Return">Share Feedback</button>
+        </div>
+    </div>
+    <div class="confettio" id="confettio"></div>
+    <footer class="foot">
+        <p class="fot">Made with ❤️ by <a href="#">Your Team</a></p>
+    </footer>
+</body>
+
+<script>
+    // JavaScript for interactive button actions
+    function goHome() {
+        window.location.href = '/main/home'; // Replace with your homepage URL
+    }
+
+    function performAction() {
+        alert('Thank you for your valuable feedback!'); // Replace with your desired action
+    }
+
+    // JavaScript for confetti animation
+    const confettiContainer = document.getElementById('confettio');
+
+    function createConfettiPiece() {
+        const confettiPiece = document.createElement('div');
+        const size = Math.random() * 10 + 5 + 'px';
+        confettiPiece.style.width = size;
+        confettiPiece.style.height = size;
+        confettiPiece.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        confettiPiece.style.left = Math.random() * 100 + '%';
+        confettiPiece.style.animationDuration = Math.random() * 4 + 2 + 's';
+        confettiPiece.style.animationDelay = Math.random() * 2 + 's';
+        confettiContainer.appendChild(confettiPiece);
+
+        setTimeout(() => {
+            confettiContainer.removeChild(confettiPiece);
+        }, 6000);
+    }
+
+    function createConfetti() {
+        for (let i = 0; i < 120; i++) {
+            createConfettiPiece();
+        }
+    }
+
+    createConfetti();
+    setInterval(createConfetti, 4000); // Generate confetti continuously
+</script>
