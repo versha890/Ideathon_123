@@ -1,5 +1,5 @@
 <% layout("/layout/boilerplate")%>
-    <div class="brush-box">
+    <!-- <div class="brush-box">
         <div class="life">
             <i class="fa-solid fa-heart one"></i>
             <i class="fa-solid fa-heart two"></i>
@@ -11,12 +11,90 @@
             <button class="nextbtn btn btn-primary btn-lg">NEXT LEVEL</button>
         </form>
 
+    </div> -->
+
+<div class="full2 ">
+    <div class="life">
+        <i class="fa-solid fa-heart one"></i>
+        <i class="fa-solid fa-heart two"></i>
+        <i class="fa-solid fa-heart three"></i>
     </div>
-    <!-- <script src="/js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <div class="abc">
+        <div class="card card1" style="width: 28rem;" >
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/008/734/794/small_2x/cartoon-little-boy-having-bath-vector.jpg" class="card-img-top" alt="bathing">
+            <div class="card-body">
+                <p class="card-text">💧 "Save water, save life! Opt for shorter showers and turn off the tap while soaping. Every drop counts—let's conserve it for the future!"</p>
+                <a href="#" class="btn river btn-primary">Do you save <b>water</b></a>
+                <a href = "#" class=" btn yes btn-success" id="blastButton">Yes</a>
+                <a href = "#" class=" btn no btn-danger">No</a>
+            </div>
+        </div>
+        <div class="card card2" style="width: 28rem; ">
+            <img src="https://img.freepik.com/premium-photo/tooth-brushing-vectorial-illustrated-kid-brushing-teeth-eps-file-available_1036975-92016.jpg" class="card-img-top"  alt = "brushing" style="height: 500px;">
+            <br><br>
+            <div class="card-body">
+                <p class="card-text2">
+                    💧 "Don’t let water flow while you brush! Use a mug or turn off the tap—small steps make a big difference in saving water."</p>
+                <a href="#" class="btn river btn-primary" >Do you save <b>water</b></a>
+                <a href = "#" class=" btn yes btn-success" id="blastbutton">Yes</a>
+                <a href = "#" class=" btn noo btn-danger">No</a>
+            </div>
+        </div>
+    </div>
+    <form method="GET" action="/main/level2">
+        <button class="nextbtn2 btn btn-primary btn-lg">NEXT LEVEL</button>
+    </form>
+</div>
+
 <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    // Add event listener to the "OFF" button
+    const offButton = document.querySelector('.no');
+    offButton.addEventListener('click', function () {
+        // Select all <i> elements inside the .life div
+        const lifeIcons = document.querySelectorAll('.life i');
+
+        // Loop through the icons and find the first one with class "fa-heart"
+        for (let icon of lifeIcons) {
+            if (icon.classList.contains('two')) {
+                icon.classList.remove('fa-heart'); // Remove heart icon
+                icon.classList.add('fa-heart-broken'); // Add broken heart icon
+                break; // Stop after changing one icon
+            }
+        }
+
+        // Disable the button after one click
+        offButton.disabled = true;
+    });
+});
+        document.addEventListener('DOMContentLoaded', function () {
+    // Add event listener to the "OFF" button
+    const offButton = document.querySelector('.noo');
+    offButton.addEventListener('click', function () {
+        // Select all <i> elements inside the .life div
+        const lifeIcons = document.querySelectorAll('.life i');
+
+        // Loop through the icons and find the first one with class "fa-heart"
+        for (let icon of lifeIcons) {
+            if (icon.classList.contains('two')) {
+                icon.classList.remove('fa-heart'); // Remove heart icon
+                icon.classList.add('fa-heart-broken'); // Add broken heart icon
+                break; // Stop after changing one icon
+            }
+        }
+
+        // Disable the button after one click
+        offButton.disabled = true;
+    });
+});
+
         const blastbuton = document.querySelector('#blastButton');
         blastbuton.addEventListener("click" , ()=>{
             alert("Nice! Click on the next level to proceed further");
-        })
+        });
+        const blastbutoon = document.querySelector('#blastbutton');
+        blastbutoon.addEventListener("click" , ()=>{
+            con;
+        });
+
 </script>

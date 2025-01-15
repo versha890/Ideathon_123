@@ -66,6 +66,12 @@ body{
     color: #83B0DE;
     font-size: 2rem;
 }
+.full2{
+        background-image: url("../images/backlevel2.avif");
+        background-size: cover;
+        height: 100vh;
+        width: 1520px;
+}
 
 
 /*level2*/
@@ -83,11 +89,11 @@ body{
 }
 
 .card1 :hover{
-    box-shadow: 10px 10px 50px rgb(39, 36, 36);
+    box-shadow: 15px 15px 50px rgb(39, 36, 36);
     transform: scale(1.05,1.05);
 }
 .card2 :hover{
-    box-shadow: 10px 10px 50px gray;
+    box-shadow: 15px 15px 50px gray;
     transform: scale(1.05,1.05);
 
 }
@@ -100,6 +106,13 @@ body{
 .nextbtn2{
     margin-left: 1350px;
     margin-top: -45px;
+}
+.card-text{
+    font-weight: 800;
+}
+.card-text2{
+    font-weight: 800;
+    margin-top: -45px !important;
 }
 
 
@@ -372,18 +385,19 @@ h2{
 /* blast button*/
 
 #blastButton {
-    /* padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background-color: #007BFF; */
-    /* border: none;
-    border-radius: 5px; */
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #blastButton:hover {
+    background-color: #0056b3;
+}
+#blastbutton {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#blastbutton:hover {
     background-color: #0056b3;
 }
 

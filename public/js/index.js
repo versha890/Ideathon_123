@@ -49,3 +49,34 @@ function createConfetti() {
     }, animationDuration * 1000);
 }
 
+const buttoon = document.getElementById("blastbutton");
+
+buttoon.addEventListener("click", () => {
+    for (let i = 0; i < 100; i++) {
+        createConfetti();
+    }
+});
+
+function createConfetti() {
+    const confetti = document.createElement("div");
+    confetti.classList.add("confetti");
+    document.body.appendChild(confetti);
+
+    const size = Math.random() * 10 + 5;
+    confetti.style.width = `${size}px`;
+    confetti.style.height = `${size}px`;
+
+    const colors = ["#FF5733", "#33FF57", "#3357FF", "#FF33A1", "#F3FF33"];
+    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+    confetti.style.left = Math.random() * window.innerWidth + "px";
+    confetti.style.top = "-50px";
+
+    const animationDuration = Math.random() * 2 + 1;
+    confetti.style.animationDuration = `${animationDuration}s`;
+
+    setTimeout(() => {
+        confetti.remove();
+    }, animationDuration * 1000);
+}
+
