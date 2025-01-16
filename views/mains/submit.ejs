@@ -1,4 +1,5 @@
 <% layout("/layout/boilerplate")%>
+<div class="thank">Thank you <i><%= name %></i> for your valuable feedback</div>
 <video autoplay  muted>
     <source src="/images/thankyou.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -17,5 +18,19 @@
             border: 2px solid #ccc;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .thank{
+            background-color: rgb(210, 170, 221);
+            margin-left: 600px;
+            font-weight: bolder;
+            border: 2px solid rgb(203, 122, 221);
+            border-radius: 15px;
+            height: 35px;
+            width: 320px;
+            padding: 2px;
+        }
+        .thank:hover{
+            box-shadow: 10px 10px 13px rgb(114, 4, 126);
+            transform: scale(1.03,1.03);
         }
 </style>
