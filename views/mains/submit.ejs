@@ -10,6 +10,7 @@
             padding: 0;
         }
         video{
+            position: relative;
             width: 100vw;
             height: 90vh;
             object-fit: cover;
@@ -20,13 +21,17 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .thank{
+            z-index: 1;
+            position: absolute;
             background-color: rgb(210, 170, 221);
-            margin-left: 600px;
+            margin-top: 2vh;
+            margin-left: 40vw;
+            /* margin-left: 600px; */
             font-weight: bolder;
             border: 2px solid rgb(203, 122, 221);
             border-radius: 15px;
             height: 35px;
-            width: 320px;
+            width: 360px;
             padding: 2px;
         }
         .thank:hover{

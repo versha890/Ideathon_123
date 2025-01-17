@@ -73,12 +73,18 @@ app.get("/main/contact" , (req, res)=>{
 });
 app.get("/main/info" , (req,res)=>{
     res.render("mains/info.ejs")
+    
 });
+app.get("/main/policies" , (req,res)=>{
+    res.render("mains/policies.ejs")
+    
+});
+
 
 
 app.post("/submit" , (req, res)=>{
     let newuser = new Userr(req.body.user);
     newuser.save();
-    console.log(newuser);
+    // console.log(newuser);
     res.render("mains/submit.ejs" , {name : newuser.name});
 });

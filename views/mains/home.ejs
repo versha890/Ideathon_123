@@ -1,10 +1,21 @@
 <% layout("/layout/boilerplate")%>
-<video autoplay loop muted>
+<div class="home_main_container">
+    <div class="home">
+    <div class="home_text">
+        <h3>ECOFLOW</h3>
+        Eco flow a one stop solution for your water needs.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ducimus!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde praesentium in illo magni aperiam sit nesciunt at facere. Non recusandae alias qui sunt, ut quo? Doloremque, delectus consectetur ea illo ut distinctio qui blanditiis eveniet impedit porro debitis odio provident vero molestias omnis ratione corrupti ipsam laborum ab. Maxime aspernatur laborum sequi neque eligendi! Id dolorum, exercitationem quisquam labore minima, odit quos officia soluta at optio quibusdam eligendi eveniet sunt ullam nihil sit dignissimos facere modi magnam eum corporis repellendus sequi! Doloremque sit porro dolorem praesentium velit eveniet perspiciatis vero laboriosam, quis repellat beatae, libero aliquid sint totam, quae neque.
+    </div>
+    </div>
+<!-- <video autoplay loop muted>
     <source src="/images/2.mp4" type="video/mp4">
     Your browser does not support the video tag.
-</video>
-<div class="home_container">
-    <div class="flashcard-container">
+</video> -->
+
+</div>
+<div class="home_container" >
+    <div class="flashcard-container" >
         <div class="flashcard">
             <div class="flashcard-front">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5d7PMD42mtJjnRn_RGw6CBJ904sYlgxHxOQ&s" alt="Image">
@@ -96,15 +107,27 @@
         padding: 0;
     }
     video{
-        width: 100vw;
-        height: 90vh;
+        flex: 3.5;
+        border-radius: 50%;
+        width: 50vw;
+        object-position: 100% 0%;
         object-fit: cover;
+        position: relative;
         display: block;
         margin: 0 auto;
-        border: 2px solid #ccc;
+        border: 2px solid white;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+    .home_main_container{
+        display: flex;
+        width: 100vw;
+        height: 90vh;
+    }
+    .home_container{
+        background-color: #033f40;
+    }
+
 /* Container for the flashcard */
 .flashcard-container {
     display: flex;

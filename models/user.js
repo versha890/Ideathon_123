@@ -8,6 +8,9 @@ const userSchema = new Schema({
         email :{
             type : String
         },
+        pincode:{
+            type: Number 
+        },
         message:{
             type:String
         }
