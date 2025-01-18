@@ -1,19 +1,31 @@
 <% layout("/layout/boilerplate")%>
 <div class="home_main_container">
-    <div class="home">
-    <div class="home_text">
-        <h3>ECOFLOW</h3>
-        Eco flow a one stop solution for your water needs.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ducimus!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde praesentium in illo magni aperiam sit nesciunt at facere. Non recusandae alias qui sunt, ut quo? Doloremque, delectus consectetur ea illo ut distinctio qui blanditiis eveniet impedit porro debitis odio provident vero molestias omnis ratione corrupti ipsam laborum ab. Maxime aspernatur laborum sequi neque eligendi! Id dolorum, exercitationem quisquam labore minima, odit quos officia soluta at optio quibusdam eligendi eveniet sunt ullam nihil sit dignissimos facere modi magnam eum corporis repellendus sequi! Doloremque sit porro dolorem praesentium velit eveniet perspiciatis vero laboriosam, quis repellat beatae, libero aliquid sint totam, quae neque.
-    </div>
-    </div>
+    <p>
+        <h1 class="eco"><b style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #0a4a16;">eco</b><b style="color: #3c3b3b;">flow</b></h1>
+        <br>
+        <p class="para" id="typing-text">
+            <!-- Water is the foundation of life, yet its availability is becoming a growing concern due to<br> 
+            overuse and pollution.Conserving water is not just a responsibility but a necessity for the <br>
+            survival of future generations.Simple actions like fixing leaking taps, using water-efficient <br>
+            appliances,and practicing rainwater harvesting can make a significant difference.Agriculture,<br> 
+            being the largest consumer of water, can benefit greatly from methods like drip irrigation. <br>
+            Industries must also adopt sustainable practices to reduce water wastage. Awareness plays a crucial <br>
+            role,which is why interactive tools like games can educate individuals about the importance of saving<br> 
+            water in a fun and engaging way. Additionally, platforms like complaint boxes empower citizens to report<br>
+            water-related issues, ensuring timely action to prevent wastage. Together, small efforts can lead to <br
+            >monumental changes, helping preserve this precious resource for a thriving and sustainable future.</p>
+            <br> -->
+        </p>
+    <form action="/main/learnmore"  method=GET>
+        <button class="btn btnnler btn-lg btn-primary">Learn more</button>
+    </form>
 <!-- <video autoplay loop muted>
     <source src="/images/2.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video> -->
-
+<div class="homeimg"></div>
 </div>
+
 <div class="home_container" >
     <div class="flashcard-container" >
         <div class="flashcard">
@@ -119,13 +131,14 @@
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    .home_main_container{
+    /* .home_main_container{
         display: flex;
         width: 100vw;
-        height: 90vh;
-    }
+        height: 50vh;
+    } */
     .home_container{
-        background-color: #033f40;
+        border: 5px solid rgb(22, 51, 61);
+        width: 100vw;
     }
 
 /* Container for the flashcard */
@@ -138,13 +151,15 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background-color: #0a4a16;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .flashcard {
     width: 250px;
     height: 300px;
     position: relative;
+    border: 3px solid rgb(4, 33, 4);
+    border-radius: 10px;
     transform-style: preserve-3d; /* Enable 3D effect */
     transition: transform 0.6s; /* Smooth transition for flip effect */
 }
@@ -201,3 +216,35 @@
 }
 
 </style>
+<script>
+    const typingTextElement = document.getElementById("typing-text");
+    const text = `Water is the foundation of life, yet its availability is becoming a growing concern due to<br>
+overuse and pollution. Conserving water is not just a responsibility but a necessity for the<br>
+survival of future generations. Simple actions like fixing leaking taps, using water-efficient<br>
+appliances, and practicing rainwater harvesting can make a significant difference. Agriculture,<br>
+being the largest consumer of water, can benefit greatly from methods like drip irrigation.<br>
+Industries must also adopt sustainable practices to reduce water wastage. Awareness plays a<br> crucial
+role,which is why interactive tools like games can educate individuals about the <br>importance of saving
+water in a fun and engaging way.<br> Additionally, platforms like complaint boxes empower citizens to report
+water-related issues, <br>ensuring timely action to prevent wastage. Together, small efforts can lead to<br>
+monumental changes, helping preserve this precious resource for a thriving and sustainable future.`;
+
+        let index = 0;
+
+        function typeText() {
+            if (index < text.length) {
+                if (text[index] === "<") {
+                    const endIndex = text.indexOf(">", index);
+                    typingTextElement.innerHTML += text.slice(index, endIndex + 1); // Add HTML tags
+                    index = endIndex + 1;
+                } else {
+                    typingTextElement.innerHTML += text[index]; // Add normal characters
+                    index++;
+                }
+                setTimeout(typeText, 10); // Adjust typing speed
+            }
+        }
+
+        window.onload = typeText;
+
+</script>

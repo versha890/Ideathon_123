@@ -153,7 +153,7 @@ body{
     color: black;
     padding: 0.5rem;
     transition: background-color 0.3s;
-    color: white;
+    color: whitesmoke;
 }
 
 .nav-links a:hover {
@@ -199,7 +199,14 @@ body{
 }
 .logo{
     padding-left: 0px;
+
     transition: 0.2s ease-in-out;
+    background-image: url("../images/eco.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    height: 60px;
+    width: 80px;
+    margin-left: 10px;
 }
 .logo:hover{
     transform: scale(1.05);
@@ -479,9 +486,9 @@ h2{
     transform: scale(1.02,1.02);
 }
 .carpipeline{
-    background-color: #6a8f7e;
+    background-color: rgba(114, 165, 219, 0.7);
     color: black;
-    border: 2px solid #156948;
+    border: 2px solid rgb(60, 135, 215) ;
     border-radius: 30px;
     text-align: center;
     font-size: xx-large;
@@ -497,9 +504,9 @@ h2{
 }
 
 .carpipeline2{
-    background-color: #6a8f7e;
+    background-color: rgba(47, 129, 216, 0.8);
     color: black;
-    border: 2px solid #156948;
+    border: 2px solid rgb(60, 135, 215) ;
     border-radius: 30px;
     text-align: center;
     font-size: x-large;
@@ -537,9 +544,9 @@ h2{
     transform: scale(1.02,1.02);
 }
 .carbuc{
-        background-color: #6a8f7e;
+        background-color: rgba(114, 165, 219, 0.7);
         color: black;
-        border: 2px solid #156948;
+        border: 2px solid rgb(60, 135, 215);
         border-radius: 30px;
         text-align: center;
         font-size: xx-large;
@@ -555,9 +562,9 @@ h2{
 }
 
 .carbuc2{
-    background-color: #6a8f7e;
+    background-color: rgba(47, 127, 213, 0.8);
     color: black;
-    border: 2px solid #156948;
+    border: 2px solid rgb(60, 135, 215);
     border-radius: 30px;
     text-align: center;
     font-size: x-large;
@@ -580,7 +587,8 @@ h2{
 }
 .level3{
     /* background-color: rgba(150, 12, 184, 0.3); */
-    background-image: url("../images/BANNE.png");
+    background-image: url("../images/back222.avif");
+    background-size: cover;
 }
 
 .end{
@@ -592,7 +600,7 @@ h2{
 
 .alldiv{
     height: 60px;
-    background-color: rgba(8, 163, 210,0.6);
+    background-color: rgba(99, 210, 160, 0.6);
     margin-top: 15px;
     margin-left: 5px;
     border-radius: 20px;
@@ -608,7 +616,7 @@ h2{
     margin-left: 600px;
     margin-top: 10px;
     height: 60px;
-    background-color: #0ca8c4;
+    background-color: #3ac078;
     border-radius: 25px;
     width: 300px;
     text-align: center;
@@ -629,7 +637,7 @@ h2{
 
 .pol{
     height: 100px;
-    background-color: rgba(8, 163, 210,0.6);
+    background-color: rgba(99, 210, 160, 0.6);
     margin-top: 10px;
     font-size: larger;
     font-weight: bolder;
@@ -667,12 +675,13 @@ body {
     margin-bottom: 10px;
 }
 .contact_container2{
-    padding-top: 125px;
+    padding-top: 140px;
     padding-left: 45vw;
-    margin-top:0;
+    margin-top:-55px;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-image: url("../images/save_water.jpg");
+    background-size: cover;
 }
 
 /* Form Styling */
@@ -855,11 +864,13 @@ body {
 .info_container{
     width: 100vw;
     height: 80vh;
+    border: 5px solid rgb(16, 31, 16);
+    border-radius: 10px;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#38A592 ;
+    background-color:#bbe5de ;
 }
 .graph_container{
     padding: 0px 1.5vw ;
@@ -867,12 +878,15 @@ body {
     gap:2vw;
 }
 .info_graph{
-    flex:1;
-    width: 20vw;
+    /* flex:1; */
+    width: 600px !important;
     height: 400px;
     background-image: url("../images/graph.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    margin-left: 50px;
+    border : 2px solid pink;
+    border-radius: 15px;
 
 }
 .info_graph2{
@@ -882,11 +896,13 @@ body {
     background-image: url("../images/graph2.png");
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 20px;
 }
 .info_text{
     flex:1;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
+    margin-top: 45px;
 }
 /* .info_container img{
     width: 100%;
@@ -910,10 +926,12 @@ body {
     box-shadow: 2px 2px 10px #0a0000;
     border-radius:20px;
 }
-.policies_container{
+
+
+/* .policies_container{
     padding-top: 10vh;
     width: 100vw;
-    background-color: #00b894;
+    background-color: #92c6bb;
     display: flex;
     row-gap: 8vh;
     flex-direction: column;
@@ -935,4 +953,59 @@ body {
 .policies_container2 a{
     color: white;
     text-decoration: none;
+} */
+
+.policies_container{
+    height: 900px;
+    width: 1420px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-top: 25px;
+    background-color: whitesmoke;
+}
+
+
+
+
+/* home */
+.homeimg{
+    background-image: url("../images/save.webp");
+    background-size: cover;
+    padding-left: 25px;
+    border-radius: 50% ;
+    height: 500px;
+    width: 500px;
+    margin-top: 69px;
+    margin-right: 90px;
+}
+.home_main_container{
+    background-image: url("../images/homeback.jpg") !important;
+    background-size: cover;
+    border-radius: 5px;
+    border: 2px solid rgb(6, 35, 6);
+    display: flex;
+    justify-content: space-around;
+    height: 650px;
+    width: 1525px;
+    opacity: 0.8;
+}
+.para{
+    margin-top: 170px;
+    margin-left: -130px;
+    font-size: larger;
+    font-weight: bolder;
+    color: #0a0000;
+    line-height: 0.9cm;
+}
+.eco{
+    margin-top: 70px;
+    margin-left: 35px;
+    font-size:5cap;
+}
+.btnnler{
+    margin-top: 590px;
+    margin-left: -830px;
+    background-color: #02382f !important;
 }

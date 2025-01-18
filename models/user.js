@@ -9,7 +9,7 @@ const userSchema = new Schema({
             type : String
         },
         pincode:{
-            type: Number 
+            type: Number
         },
         message:{
             type:String

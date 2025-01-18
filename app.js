@@ -88,3 +88,7 @@ app.post("/submit" , (req, res)=>{
     // console.log(newuser);
     res.render("mains/submit.ejs" , {name : newuser.name});
 });
+
+app.get("/main/homee" , (req , res)=>{
+    res.render("mains/homee.ejs")
+})
