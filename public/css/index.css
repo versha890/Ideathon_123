@@ -957,12 +957,12 @@ body {
 
 .policies_container{
     height: 900px;
-    width: 1420px;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-left: 50px;
-    margin-top: 25px;
+    padding-left: 50px;
+    padding-top: 25px;
     background-color: whitesmoke;
 }
 
@@ -988,7 +988,7 @@ body {
     display: flex;
     justify-content: space-around;
     height: 650px;
-    width: 1525px;
+    width: 100vw;
     opacity: 0.8;
 }
 .para{
@@ -1008,4 +1008,9 @@ body {
     margin-top: 590px;
     margin-left: -830px;
     background-color: #02382f !important;
+}
+
+footer{
+    display: flex;
+    bottom: 0;
 }
