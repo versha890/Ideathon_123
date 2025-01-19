@@ -445,12 +445,13 @@ h2{
     height: 8rem;
     background-color: rgb(211, 207, 207);
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center !important;
     align-items: space-evenly;
+    margin-right: 0px;
 }
 .f-info-links{                                             /*footer */
     text-decoration: none !important;
-    color: #222222;
+    color: #222222
 }
 .f-info-socials i{                                          /*footer */
     font-size: 1.2rem;
@@ -474,8 +475,8 @@ h2{
     width: 500px;
     border: 2px solid black !important;
     border-radius: 30px;
-    background-image: url("../images/carpipe2.jpg");
-    background-size: cover;
+    background-image: url("../images/pip.jpg");
+    background-size: contain;
     width: 100vh;
     margin-top: -440px;
     margin-left: 10px;
@@ -600,7 +601,7 @@ h2{
 
 .alldiv{
     height: 60px;
-    background-color: rgba(99, 210, 160, 0.6);
+    /* background-color: rgba(99, 210, 160, 0.6); */
     margin-top: 15px;
     margin-left: 5px;
     border-radius: 20px;
@@ -608,15 +609,16 @@ h2{
     font-size: larger;
     font-weight: bolder;
 }
-.alldiv:hover{
+/* .alldiv:hover{
     box-shadow: 12px 12px 12px black;
     transform: scale(1.02,1.02);
-}
+} */
 .hading{
     margin-left: 600px;
     margin-top: 10px;
     height: 60px;
-    background-color: #3ac078;
+    background-color: #edf1f1;
+    border: 2px solid rgb(5, 20, 5);
     border-radius: 25px;
     width: 300px;
     text-align: center;
@@ -631,13 +633,15 @@ h2{
 }
 
 .div1{
-    background-image: url("../images/simpleback.jpg");
-    background-size: cover;
+    /* background-image: url("../images/lp.avif"); */
+    background-color: #cfeddd;
+    background-size: contain;
+    /* width: 1500px; */
 }
 
 .pol{
     height: 100px;
-    background-color: rgba(99, 210, 160, 0.6);
+    /* background-color: rgba(99, 210, 160, 0.6); */
     margin-top: 10px;
     font-size: larger;
     font-weight: bolder;
@@ -645,10 +649,10 @@ h2{
     padding-left: 40px;
     padding-top: 10px;
 }
-.pol:hover{
+/* .pol:hover{
     box-shadow: 12px 12px 12px black;
     transform: scale(1.02,1.02);
-}
+} */
 
 /* contact css */
 /* General Reset */
@@ -858,7 +862,7 @@ body {
     color: #ff7eb3;
 }
 .fot{
-    margin-right: 250px !important;
+    margin-left: 520px !important;
 }
 /* info */
 .info_container{
@@ -957,13 +961,14 @@ body {
 
 .policies_container{
     height: 900px;
-    width: 100vw;
+    width: 1400px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-left: 50px;
+    padding-left: 10px;
     padding-top: 25px;
     background-color: whitesmoke;
+    margin-left: 50px;
 }
 
 
